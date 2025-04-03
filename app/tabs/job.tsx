@@ -148,7 +148,7 @@ const JobList = () => {
         <View style={styles.container}>
           {item?.whatsapp_no && (
             <TouchableOpacity style={styles.whatsappButton} onPress={() => openWhatsApp(item.whatsapp_no!)}>
-              <Text style={styles.buttonText}>📞 Call HR</Text>
+              <Text style={styles.buttonText}>📞 Contact HR</Text>
             </TouchableOpacity>
           )}
           {item?.whatsapp_link && (

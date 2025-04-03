@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
 // Job type definition
+// Job type definition
 export type Job = {
   id: number; // ✅ Ensuring each job has a unique ID
   title?: string;
@@ -10,12 +11,16 @@ export type Job = {
   job_type?: string;
   experience?: string;
   qualification?: string;
-  advertiser?: string;
-  view?: number;
-  shares?: number;
+  vacancies?: string;
+  shift_timing?: string;
+  locality?: string;
+  job_role_id?: number;
+  whatsapp_no?: string;
+  contact_link?: string;
+  whatsapp_link?: string; // ✅ Added this to match the JobList.tsx structure
   updated_on?: string;
-  button_text?: string;
 };
+
 
 // Context type
 type BookmarkContextType = {
